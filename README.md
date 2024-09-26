@@ -9,7 +9,6 @@ This is a RESTful API for managing product transactions, built using Node.js, Ex
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
-- [License](#license)
 
 ## Features
 
