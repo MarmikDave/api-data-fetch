@@ -35,8 +35,8 @@ This is a RESTful API for managing product transactions, built using Node.js, Ex
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/product-management-api.git
-   cd product-management-api
+   git clone https://github.com/MarmikDave/roxiler-task.git
+   cd roxiler-task
    ```
 
 2. Install the dependencies:
