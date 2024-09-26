@@ -1,0 +1,273 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  overflow-x: hidden;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow-x: hidden;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* Month Selector Styling */
+.month-selector {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+  background-color: transparent;
+}
+
+.month-selector:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.month-selector label {
+  font-size: 1.2rem;
+  margin-right: 15px;
+  color: #333;
+  font-weight: 500;
+}
+
+.month-selector select {
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s;
+  background-color: #f9f9f9;
+}
+
+.month-selector select:hover {
+  background-color: #e9f5ff;
+}
+
+.month-selector select:focus {
+  background-color: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Statistics Section */
+.statistics {
+  background-color: rgba(17, 213, 135, 0.15);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.statistics-content {
+  /* background-color: #f8e5a0; */
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.statistics h2 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.statistics p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  text-align: left;
+}
+
+.centered-heading {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Transactions Table */
+.transactions-table {
+  margin-bottom: 20px;
+}
+
+.transactions-table input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.transactions-table img {
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: cover;
+}
+
+.transactions-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transactions-table th,
+.transactions-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.transactions-table th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.transactions-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.transactions-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.pagination button {
+  padding: 8px 16px;
+  margin: 0 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-size: 1.2rem;
+}
+
+/* Bar Chart */
+.bar-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bar-chart h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.bar-chart .recharts-responsive-container {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+}
+
+/* Pie Chart */
+.pie-chart {
+  margin-bottom: 30px;
+}
+
+.pie-chart h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* Loading and Error States */
+p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .month-selector {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .month-selector select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .statistics {
+    padding: 15px;
+  }
+
+  .transactions-table th,
+  .transactions-table td {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .transactions-table img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  .pagination {
+    flex-direction: column;
+  }
+
+  .pagination button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .statistics p {
+    font-size: 1rem;
+  }
+
+  .transactions-table th,
+  .transactions-table td {
+    font-size: 0.8rem;
+  }
+}
